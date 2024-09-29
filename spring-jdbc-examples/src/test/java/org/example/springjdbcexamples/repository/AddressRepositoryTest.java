@@ -2,6 +2,7 @@ package org.example.springjdbcexamples.repository;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.springjdbcexamples.dox.Address;
+import org.example.springjdbcexamples.dto.AddressUser;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,6 +30,12 @@ class AddressRepositoryTest {
     @Test
     void deleteAddressById() {
         addressRepository.deleteAddressById("3");
+    }
+    @Test
+    void findAddressUserTest() {
+        AddressUser addressUser = addressRepository.findAddressUserById("2");
+        log.debug("{}",addressUser.getUser());
+        log.debug("{}", addressUser.getAddress());
     }
 
 }

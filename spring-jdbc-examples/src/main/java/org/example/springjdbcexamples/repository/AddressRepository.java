@@ -1,6 +1,8 @@
 package org.example.springjdbcexamples.repository;
 
 import org.example.springjdbcexamples.dox.Address;
+import org.example.springjdbcexamples.dto.AddressUser;
+import org.example.springjdbcexamples.mapper.AddressUserRowMapper;
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -18,5 +20,9 @@ public interface AddressRepository extends CrudRepository<Address, String> {
     @Modifying
     @Query("delete from address where id=:aid")
     void deleteAddressById(String aid);
+    @Query(value = "select * from address a join user u on u.id = a.user_id where a.id=:aid",
+            rowMapperClass = AddressUserRowMapper.class)
+    AddressUser findAddressUserById(String aid);
+
 
 }
