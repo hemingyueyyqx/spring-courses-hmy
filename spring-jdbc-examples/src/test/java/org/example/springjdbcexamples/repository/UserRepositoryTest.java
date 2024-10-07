@@ -3,6 +3,7 @@ package org.example.springjdbcexamples.repository;
 import lombok.extern.slf4j.Slf4j;
 import org.example.springjdbcexamples.dox.User;
 import org.example.springjdbcexamples.dto.UserAddress;
+import org.example.springjdbcexamples.dto.UserCountDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,7 +18,7 @@ class UserRepositoryTest {
 
   @Test
   public void saveUser() {
-    User user = User.builder().name("Zhang").build();
+    User user = User.builder().name("Daming").build();
     userRepository.save(user);
   }
   @Test
@@ -33,4 +34,10 @@ class UserRepositoryTest {
   }
 
 
+  @Test
+  void findCounts() {
+    for(UserCountDTO countDTO : userRepository.findCounts()) {
+      log.debug(countDTO.toString());
+    }
+  }
 }

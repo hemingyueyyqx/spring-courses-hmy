@@ -2,6 +2,7 @@ package org.example.springjdbcexamples.repository;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.springjdbcexamples.dox.Address;
+import org.example.springjdbcexamples.dox.User;
 import org.example.springjdbcexamples.dto.AddressUser;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,12 @@ class AddressRepositoryTest {
     private AddressRepository addressRepository;
     @Autowired
     private UserRepository userRepository;
+
+    @Test
+    public void saveAddress() {
+        Address address = Address.builder().detail("1018").userId("1284342922891915264").build();
+        addressRepository.save(address);
+    }
 
     @Test
     void findByUserId() {
@@ -33,7 +40,7 @@ class AddressRepositoryTest {
     }
     @Test
     void findAddressUserTest() {
-        AddressUser addressUser = addressRepository.findAddressUserById("2");
+        AddressUser addressUser = addressRepository.findAddressUserById("1292717272796475392");
         log.debug("{}",addressUser.getUser());
         log.debug("{}", addressUser.getAddress());
     }
