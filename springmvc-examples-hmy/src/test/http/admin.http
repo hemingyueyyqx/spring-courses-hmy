@@ -2,7 +2,13 @@ GET http://localhost:8080/api/admin/users
 
 ###
 GET localhost:8080/api/admin/users/1001
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyIiwicm9sZSI6IkpzMDkiLCJpYXQiOjE3Mjk4MjI4ODIsImV4cCI6MTcyOTkwOTI4Mn0.9UH-VOzJSlauTw8Eqn_yvxBsNY5U3GKfoJzoR_AJsiE
 
 
 ###
 GET localhost:8080/api/admin/users/1002
+
+###
+GET http://localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxIiwicm9sZSI6IlNqMDgiLCJpYXQiOjE3Mjk4MjM1NTQsImV4cCI6MTcyOTkwOTk1NH0.rTzd8V7K3ZVC3hOjAT5j8-ypq2nOJHwKdePqxhMaYbY
+
