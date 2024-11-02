@@ -12,6 +12,7 @@
     <modules>
         <module>spring-jdbc-examples</module>
         <module>springmvc-examples-hmy</module>
+        <module>backend-examples</module>
     </modules>
 
 

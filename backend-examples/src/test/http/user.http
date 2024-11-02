@@ -1,0 +1,18 @@
+PATCH localhost:8080/api/user/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiSnMwOSIsInVpZCI6IjEzMDIyMDIyNjM1Njk5MzYzODQiLCJpYXQiOjE3MzA1Mzk3MjksImV4cCI6MTczMDYyNjEyOX0.u31HofoUdBD6QaugdT1gGrHYn41eLMhxKcPTAIByh2Q
+role: Js09
+Content-Type: application/json
+
+{
+  "password": "8888"
+}
+
+###
+PATCH localhost:8080/api/user/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzAyMjE4MDQ3NTkxNTI2NDAwIiwicm9sZSI6IkpzMDkiLCJpYXQiOjE3MzA1NDM1ODYsImV4cCI6MTczMDYyOTk4Nn0.-2iluHcEjswRh9qQlgGuWuudhC_oCrXkjwH7kr_gqg8
+role: Js09
+Content-Type: application/json
+
+{
+  "password": "6666"
+}

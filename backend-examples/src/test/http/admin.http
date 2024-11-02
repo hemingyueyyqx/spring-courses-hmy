@@ -1,0 +1,35 @@
+POST localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2owOCIsInVpZCI6IjEzMDIyMDAwMTQ0MDc5NzA4MTYiLCJpYXQiOjE3MzA1MzkzMTYsImV4cCI6MTczMDYyNTcxNn0.OAbuto5uehGmaqEZCuPD5UxGiiHnGD_szLf7-jNKcos
+Content-Type: application/json
+
+{
+  "name": "He",
+  "account": "1001",
+  "role": "Js09"
+
+}
+
+###
+POST localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2owOCIsInVpZCI6IjEzMDIyMDAwMTQ0MDc5NzA4MTYiLCJpYXQiOjE3MzA1MzkzMTYsImV4cCI6MTczMDYyNTcxNn0.OAbuto5uehGmaqEZCuPD5UxGiiHnGD_szLf7-jNKcos
+Content-Type: application/json
+
+{
+  "name": "Zhang",
+  "account": "1002",
+  "role": "Js09"
+
+}
+
+###
+PUT localhost:8080/api/admin/users/1001/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2owOCIsInVpZCI6IjEzMDIyMDAwMTQ0MDc5NzA4MTYiLCJpYXQiOjE3MzA1MzkzMTYsImV4cCI6MTczMDYyNTcxNn0.OAbuto5uehGmaqEZCuPD5UxGiiHnGD_szLf7-jNKcos
+
+###
+PUT localhost:8080/api/admin/users/1002/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2owOCIsInVpZCI6IjEzMDIyMDAwMTQ0MDc5NzA4MTYiLCJpYXQiOjE3MzA1MzkzMTYsImV4cCI6MTczMDYyNTcxNn0.OAbuto5uehGmaqEZCuPD5UxGiiHnGD_szLf7-jNKcos
+
+
+###
+GET localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2owOCIsInVpZCI6IjEzMDIyMDAwMTQ0MDc5NzA4MTYiLCJpYXQiOjE3MzA1MzkzMTYsImV4cCI6MTczMDYyNTcxNn0.OAbuto5uehGmaqEZCuPD5UxGiiHnGD_szLf7-jNKcos
